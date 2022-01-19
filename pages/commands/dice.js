@@ -28,7 +28,7 @@ export default function Dice() {
         return setResult(`${Math.floor(Math.random()*(parseInt(up)-parseInt(down)+1)) + parseInt(down)}이(가) 나왔어요!`)
     }
 
-    if (session) {
+    // if (session) {
         return ( 
             <>
                 <div className={styles.main}>
@@ -42,6 +42,6 @@ export default function Dice() {
                 </div>
             </>
         )
-    }
-    return <Login/>
+    // }
+    // return <Login/>
 }

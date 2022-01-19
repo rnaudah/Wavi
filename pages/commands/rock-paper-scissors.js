@@ -35,7 +35,7 @@ export default function Rock_paper_scissors() {
         }
     }
     
-    if (session) {
+    // if (session) {
         return (
             <>
                 <div className={styles.main}>
@@ -71,6 +71,6 @@ export default function Rock_paper_scissors() {
                 </div>
             </>
         )
-    }
-    return <Login/>
+    // }
+    // return <Login/>
 }
