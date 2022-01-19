@@ -18,7 +18,7 @@ export default function About() {
             <Text h4 color='white'>첫번째분은 저에대한 아이디어를 짜신 분이고, 두번째분은 저를 실제로 만들어주신 분이에요!</Text>
             <Text h4 color='white'>저는 서버가 돌아가는 이상 계속 살 수 있고, 성별은 없답니다.</Text>
             <Spacer y = {3}/>
-            <a href = '/commands/help'><Button css={{fontWeight : 'bolder', fontSize : '16px'}}>명령어 보러가기</Button></a>
+            <Link href = '/commands/help'><Button css={{fontWeight : 'bolder', fontSize : '16px'}}>명령어 보러가기</Button></Link>
         </div>
     )
 }

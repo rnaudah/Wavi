@@ -3,4 +3,8 @@ module.exports = {
   images: {
     domains: ['cdn.discordapp.com'],
   },
+  webpack(config) {
+    config.infrastructureLogging = { debug: /PackFileCache/ }
+    return config;
+  }
 }

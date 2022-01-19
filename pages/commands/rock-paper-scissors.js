@@ -9,7 +9,7 @@ import { useSession, signIn, signOut } from "next-auth/react"
 import Login from '../../components/login';
 import React, { useState } from 'react';
 
-export default function rock_paper_scissors() {
+export default function Rock_paper_scissors() {
     const { data: session } = useSession()
     const [select, setSelect] = useState('x')
     const [win, setWin] = useState('')

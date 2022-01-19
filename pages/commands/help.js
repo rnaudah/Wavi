@@ -8,9 +8,9 @@ import styles from '../../styles/Home.module.css'
 
 export default function Help() {
     const help = [
-        {title : '주사위', about : '랜덤으로 숫자를 뽑아냅니다.',url : '/commands/dice'},
-        {title : '가위바위보', about : 'Wavi와 가위바위보 대결을 합니다.',url : '/commands/rock-paper-scissors'},
-        {title : '준비 중...', about : '추후의 기능을 준비 중입니다...s',},
+        {title : '주사위', about : '랜덤으로 숫자를 뽑아냅니다.',url : '/commands/dice', key : 'dice'},
+        {title : '가위바위보', about : 'Wavi와 가위바위보 대결을 합니다.',url : '/commands/rock-paper-scissors', key : 'rock'},
+        {title : '준비 중...', about : '추후의 기능을 준비 중입니다...s', key : 'wait'},
 
     ]
     return (
@@ -19,7 +19,7 @@ export default function Help() {
                 <Grid.Container css={{backgroundColor : "rgb(0,0,0)"}} gap={2} justify = 'center'>
                     {help.map(i => {
                     return (
-                        <Grid>
+                        <Grid key = {i.key}>
                             <Card css={{ w: "330px" }} color='secondary'>
                                 <Text h4 color='white'>{i.title}</Text>
                                 <Text color="white">{i.about}</Text>
