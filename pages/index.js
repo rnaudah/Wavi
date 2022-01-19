@@ -23,7 +23,7 @@ export default function Home() {
               Wavi
             </Text>
             <Row justify="center" align="center">
-              ${session ?
+              {session ?
                 <>
                   <Avatar squared src = {session.user.image} size="lg" color="primary" bordered/>
                   <Spacer x={0.2}/>
@@ -33,7 +33,7 @@ export default function Home() {
                 </> 
                 : null}
               <Spacer x={1}/>
-              ${session ? <Button css={{fontWeight : 'bolder', fontSize : '16px'}} onClick={() => signOut()}>로그아웃</Button> : <Button css={{fontWeight : 'bolder', fontSize : '16px'}} onClick={() => signIn()}>로그인</Button>}
+              {session ? <Button css={{fontWeight : 'bolder', fontSize : '16px'}} onClick={() => signOut()}>로그아웃</Button> : <Button css={{fontWeight : 'bolder', fontSize : '16px'}} onClick={() => signIn()}>로그인</Button>}
             </Row>
           </div>
           <div className={styles.main}>
